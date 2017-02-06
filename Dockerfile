@@ -44,11 +44,11 @@ RUN apt-get install -y curl grep sed dpkg && \
 
 ENV PATH /opt/conda/bin:$PATH
 
-VOLUME ["/opt/notebooks"]
+#VOLUME ["/opt/notebooks"]
 
-WORKDIR /opt/notebooks
+#WORKDIR /opt/notebooks
 
-EXPOSE 8888
+#EXPOSE 8888
 
 ENTRYPOINT [ "/usr/bin/tini", "--" ]
 CMD [ "/bin/bash" ]
